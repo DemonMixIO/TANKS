@@ -14,7 +14,8 @@ class Object(pygame.sprite.Sprite):
 
     def __init__(self, x, y, *group, sprite="default.png", pilot=(0, 0), pilot_pixel=False, **kwargs):
         super().__init__(*group)
-        self.image = load_image(sprite)
+        self.source_image = load_image(sprite)
+        self.image = self.source_image
         self.pilot_pixel = pilot_pixel
         self.pilot = pilot
         self.rect = self.image.get_rect()
