@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a828685-2cbb-44f5-a273-61428ca9248f" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/data/font/pixel.ttf" afterDir="false" />
+    <list default="true" id="6a828685-2cbb-44f5-a273-61428ca9248f" name="Changes" comment="Damage and simple death">
+      <change afterPath="$PROJECT_DIR$/Objects/particles.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Objects/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Objects/tank.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/tank.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Objects/weapon.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/weapon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/bullets/blank.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/bullets/blank.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +27,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -100,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705845434847</updated>
       <workItem from="1705845436639" duration="21948000" />
-      <workItem from="1706015967501" duration="4071000" />
+      <workItem from="1706015967501" duration="14389000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -110,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706014229297</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Damage and simple death">
+      <option name="closed" value="true" />
+      <created>1706027208868</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706027208868</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,9 +130,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="Damage and simple death" />
+    <option name="LAST_COMMIT_MESSAGE" value="Damage and simple death" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/sandTanks$main.coverage" NAME="main Coverage Results" MODIFIED="1706027118842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sandTanks$main.coverage" NAME="main Coverage Results" MODIFIED="1706037275266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

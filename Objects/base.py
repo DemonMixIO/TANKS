@@ -57,6 +57,14 @@ class Object(pygame.sprite.Sprite):
     def move(self, dx, dy):
         self.rect = self.rect.move(dx, dy)
 
+    def death_on_out_bounds(self):
+        if not self.in_bounds():
+            self.destroy()
+
+    def destroy(self):
+        self.kill()
+        del self
+
 
 class GravityObject(Object):
 
@@ -85,7 +93,6 @@ class GravityObject(Object):
         self.simple_move(0, self.falling_speed)
 
     def physics_move(self, dx, dy):
-        print(playmap.can_move_right(self.rect), playmap.can_move_left(self.rect))
         if (dx > 0 and playmap.can_move_right(self.rect) or dx < 0 and playmap.can_move_left(
                 self.rect)) and self.in_bounds():
             self.float_position.x += dx

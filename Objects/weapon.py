@@ -1,8 +1,11 @@
 import math
+import random
+import time
 
 import numpy as np
 import pygame
 
+import config
 from Objects.base import GravityObject
 from map import playmap
 from resources import load_image
@@ -14,6 +17,13 @@ def count_damage(epicenter: pygame.Vector2, point: pygame.Vector2, radius: int, 
         return 0
     x = abs(point.distance_to(epicenter) / radius)
     return int(2 ** (-x) * max_damage)
+
+
+def full_damage(epicenter: pygame.Vector2, point: pygame.Vector2, radius: int, max_damage: int):
+    dist = abs(point.distance_to(epicenter))
+    if dist > radius:
+        return 0
+    return max_damage
 
 
 class Bullet(GravityObject):
@@ -33,9 +43,11 @@ class Bullet(GravityObject):
         self.tanks = []
         self.start = True
         self.max_damage = max_damage
+        self.wind = 0
 
     def update(self):
         if self.is_visible:
+            self.horizontal_speed += self.wind / config.fps
             self.physics_move(self.horizontal_speed, 0)
             if self.start and not self.rect.colliderect(self.owner.rect):
                 self.start = False
@@ -50,12 +62,11 @@ class Bullet(GravityObject):
                 self.explosion()
             self.angle_bullet()
             super().update()
-        if not self.in_bounds():
-            self.kill()
-            del self
+        self.death_on_out_bounds()
 
-    def shoot(self, speed, angle, tanks, owner=None):
+    def shoot(self, speed, angle, tanks, wind, owner=None):
         self.owner = owner
+        self.wind = wind
         self.tanks = tanks
         self.is_visible = True
         self.active = True
@@ -77,11 +88,92 @@ class Bullet(GravityObject):
                 self.rotation = 0
         self.image = pygame.transform.rotate(self.source_image, self.rotation)
 
-    def explosion(self):
-        print("Expolosion")
+    def damaging(self):
         playmap.remove_circle(*self.rect.center, self.radius)
         for tank in self.tanks:
             tank.damage(count_damage(pygame.Vector2(self.rect.center), pygame.Vector2(tank.rect.center), self.radius,
                                      self.max_damage))
-        self.kill()
-        del self
+
+    def explosion(self):
+        self.damaging()
+        self.destroy()
+
+
+class FireBullet(Bullet):
+    def __init__(self, x, y, *group, sprite="bullets/fire_blank.png", fire_pool=None, fire_count=20, **kwargs):
+        super().__init__(x, y, *group, sprite=sprite, **kwargs)
+        self.fire_pool = fire_pool
+        self.fire_count = fire_count
+
+    def shoot(self, speed, angle, tanks, wind, owner=None, fire_pool=None):
+        super().shoot(speed, angle, tanks, wind, owner)
+        self.fire_pool = fire_pool
+        print(self.fire_pool)
+
+    def explosion(self):
+        self.damaging()
+        for i in range(self.fire_count):
+            fire = Fire(self.rect.center[0] + random.randrange(-4, 4), self.rect.center[1] + random.randrange(-4, 4),
+                        self.fire_pool)
+            fire.shoot(speed=random.random(), angle=random.randrange(0, 180), tanks=self.tanks, wind=self.wind,
+                       owner=self.owner)
+        self.destroy()
+
+
+class Fire(Bullet):
+    def __init__(self, x, y, *group, sprite="bullets/fire.png", radius=2, max_damage=1, **kwargs):
+        super().__init__(x, y, *group, sprite=sprite, radius=radius, max_damage=max_damage, **kwargs)
+        self.count_explosion = 5
+
+    def update(self):
+        self.image = pygame.transform.rotate(self.source_image, random.randrange(0, 4) * 90)
+        if self.on_ground():
+            self.falling_speed = -1
+            self.horizontal_speed *= 0.2
+            self.count_explosion -= 1
+            self.explosion()
+        super().update()
+
+    def damaging(self):
+        playmap.remove_circle(*self.rect.center, self.radius)
+        for tank in self.tanks:
+            dmg = full_damage(pygame.Vector2(self.rect.center), pygame.Vector2(tank.rect.center), self.radius + 5,
+                              self.max_damage)
+            tank.damage(dmg)
+            if dmg != 0:
+                self.count_explosion = 0
+
+    def explosion(self):
+        self.damaging()
+        if self.count_explosion <= 0:
+            self.destroy()
+
+
+class TimeFireBullet(FireBullet):
+    def __init__(self, x, y, *group, sprite="bullets/fire.png", **kwargs):
+        super().__init__(x, y, *group, sprite=sprite, **kwargs)
+        self.timer = 0
+        self.explosion_time = 0
+
+    def shoot(self, speed, angle, tanks, wind, owner=None, fire_pool=None, timer=1):
+        super().shoot(speed, angle, tanks, wind, owner, fire_pool)
+        self.timer = time.time()
+        self.explosion_time = timer
+
+    def get_time(self):
+        return self.explosion_time - round(time.time() - self.timer)
+
+    def update(self):
+        super().update()
+        if time.time() - self.timer >= self.explosion_time:
+            self.explosion()
+
+
+weapons = {"Blank": {"class_bullet": Bullet, "pilot": (0.5, 0.5), "sprite": "bullets/blank.png", "duration": True},
+           "Fire Blank": {"class_bullet": FireBullet, "pilot": (0.5, 0.5), "sprite": "bullets/fire_blank.png",
+                          "duration": True, "radius": 10, "max_damage": 10},
+           "Timer Fire Blank": {"class_bullet": TimeFireBullet, "pilot": (0.5, 0.5),
+                                "sprite": "bullets/time_fire_blank.png",
+                                "duration": True, "radius": 10, "max_damage": 10, "fire_count": 25}
+
+           }

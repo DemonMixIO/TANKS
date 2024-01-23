@@ -28,10 +28,8 @@ class Tank(GravityObject):
     def turn(self, angle):
         if 0 <= self.angle + angle <= 180:
             self.angle += angle
-        print(self.angle)
 
-    def shoot(self, speed, bullet_pool, tanks, class_bullet, **data):
-        print("shoot")
+    def shoot(self, speed, bullet_pool, tanks, wind, fire_pool, timer, class_bullet, **data):
         rot = pygame.Vector2(8, 0).rotate(-self.angle)
         bul = class_bullet(self.rect.centerx + rot.x, self.rect.centery + rot.y, bullet_pool, **data)
-        bul.shoot(speed, self.angle, tanks, self)
+        bul.shoot(speed, self.angle, tanks, wind,  owner=self, fire_pool=fire_pool, timer=timer)
