@@ -8,15 +8,21 @@ import config
 from Objects.base import GravityObject
 from Objects.particles import Leaf
 from Objects.tank import Tank
+from Objects.ui import WeaponPanel
 from Objects.weapon import Bullet, weapons, TimeFireBullet
+from colors import *
 from map import playmap
 
 clock = pygame.time.Clock()
 pygame.init()
 
-health_font = pygame.font.Font('data/font/pixel.ttf', 20)
-timer_font = pygame.font.Font('data/font/pixel.ttf', 18)
-wind_font = pygame.font.Font('data/font/pixel.ttf', 24)
+screen = pygame.display.set_mode(config.screen_size)
+
+health_font = pygame.font.Font('data/font/rus.ttf', 24)
+timer_font = pygame.font.Font('data/font/rus.ttf', 20)
+wind_font = pygame.font.Font('data/font/rus.ttf', 24)
+info_font = pygame.font.Font('data/font/rus.ttf', 30)
+weapon_font = pygame.font.Font('data/font/rus.ttf', 24)
 
 shoot_press_time = 0
 shoot = False
@@ -24,21 +30,29 @@ is_shoot = False
 
 shoot_timer = 2
 
+tanks_pool = pygame.sprite.Group()
+bullets_pool = pygame.sprite.Group()
+leaf_pool = pygame.sprite.Group()
+fire_pool = pygame.sprite.Group()
+ui_pool = pygame.sprite.Group()
+
+# UI
+info_text = ""
+show_info_text = False
+info_timer = 2
+start_info_timer = 0
+
+weapon_panel = WeaponPanel(screen.get_width(), screen.get_height() // 2, 64, 64, pygame.Color('#222034'),
+                           screen.get_width() - 64 - 20, screen.get_height() // 2, ui_pool)
+
 wind = random.randrange(-5, 5)
 
 # INPUT
 is_pressed = [False, False, False, False, False]  # left, right, up, down, space
 
-screen = pygame.display.set_mode(config.screen_size)
-
-tanks_pool = pygame.sprite.Group()
-bullets_pool = pygame.sprite.Group()
-leaf_pool = pygame.sprite.Group()
-fire_pool = pygame.sprite.Group()
-
-cur_bullet = weapons["Timer Fire Blank"]
-tanks = [Tank(450, 100, tanks_pool, sprite="tanks/red.png"),
-         Tank(600, 100, tanks_pool, sprite="tanks/yellow.png", color=(255, 255, 0)), ]
+cur_bullet = weapon_panel.current_weapon()
+tanks = [Tank(450, 100, tanks_pool, sprite="tanks/red.png", color=tank_red_color),
+         Tank(600, 100, tanks_pool, sprite="tanks/yellow.png", color=tank_yellow_color), ]
 tanks_cycle = itertools.cycle(tanks)
 cur_tank = next(tanks_cycle)
 
@@ -75,7 +89,10 @@ while True:
             if event.key == pygame.K_TAB:
                 cur_tank = next(tanks_cycle)
             if event.unicode.isdigit() and 1 <= int(event.unicode) <= 3:
+                start_info_timer = time.time()
                 shoot_timer = int(event.unicode)
+                info_text = f"Задержка для снаряда установлена: {shoot_timer} сек"
+                show_info_text = True
 
         if not is_shoot and event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT:
@@ -92,7 +109,12 @@ while True:
                     shooting(10 * (time.time() - shoot_press_time))
         if event.type == pygame.MOUSEBUTTONDOWN:
             if event.button == 1:
-                playmap.remove_circle(pygame.mouse.get_pos()[0], pygame.mouse.get_pos()[1], 25)
+                if weapon_panel.end:
+                    weapon_panel.select_weapon(pygame.mouse.get_pos())
+                    cur_bullet = weapon_panel.current_weapon()
+                    weapon_panel.close_open()
+            if event.button == 3:
+                weapon_panel.close_open()
     if not is_shoot:
         if is_pressed[4] and cur_bullet["duration"]:
             if time.time() - shoot_press_time >= 1:
@@ -146,17 +168,30 @@ while True:
                                cur_tank.rect.center + rot + rot * i // 10, 1 + (i // 10))
     for bullet in bullets_pool.sprites():
         if isinstance(bullet, TimeFireBullet):
-            timer_boom = timer_font.render(str(bullet.get_time()), False, (255, 0, 0))
+            timer_boom = timer_font.render(str(bullet.get_time()), False, timer_boom_color)
             screen.blit(timer_boom,
                         (bullet.rect.left - timer_boom.get_width() - 5, bullet.rect.top - timer_boom.get_height() - 5))
 
     if is_shoot and len(bullets_pool.sprites()) == 0:
         is_shoot = False
         wind = random.randrange(-5, 5)
+    if show_info_text:
+        if time.time() - start_info_timer < info_timer:
+            info = info_font.render(info_text, False, info_color)
+            screen.blit(info,
+                        (screen.get_width() // 2 - info.get_width() // 2, 0))
+        else:
+            show_info_text = False
 
     # UI
-    wind_text = wind_font.render(str(wind), False, pygame.Color("#639bff"))
+    wind_text = wind_font.render(str(wind), False, wind_color)
     screen.blit(wind_text, (screen.get_width() - 50 - wind_text.get_width(), 0))
+
+    weapon_panel.update()
+    weapon_panel.draw(screen)
+
+    ui_pool.update()
+    ui_pool.draw(screen)
 
     clock.tick(config.fps)
     pygame.display.flip()

@@ -64,7 +64,7 @@ class Bullet(GravityObject):
             super().update()
         self.death_on_out_bounds()
 
-    def shoot(self, speed, angle, tanks, wind, owner=None):
+    def shoot(self, speed, angle, tanks, wind, owner=None, **kwargs):
         self.owner = owner
         self.wind = wind
         self.tanks = tanks
@@ -105,7 +105,7 @@ class FireBullet(Bullet):
         self.fire_pool = fire_pool
         self.fire_count = fire_count
 
-    def shoot(self, speed, angle, tanks, wind, owner=None, fire_pool=None):
+    def shoot(self, speed, angle, tanks, wind, owner=None, fire_pool=None, **kwargs):
         super().shoot(speed, angle, tanks, wind, owner)
         self.fire_pool = fire_pool
         print(self.fire_pool)
@@ -169,11 +169,14 @@ class TimeFireBullet(FireBullet):
             self.explosion()
 
 
-weapons = {"Blank": {"class_bullet": Bullet, "pilot": (0.5, 0.5), "sprite": "bullets/blank.png", "duration": True},
-           "Fire Blank": {"class_bullet": FireBullet, "pilot": (0.5, 0.5), "sprite": "bullets/fire_blank.png",
-                          "duration": True, "radius": 10, "max_damage": 10},
-           "Timer Fire Blank": {"class_bullet": TimeFireBullet, "pilot": (0.5, 0.5),
-                                "sprite": "bullets/time_fire_blank.png",
-                                "duration": True, "radius": 10, "max_damage": 10, "fire_count": 25}
+weapons = {"Разрывной": {"class_bullet": Bullet, "pilot": (0.5, 0.5), "sprite": "bullets/blank.png", "duration": True,
+                         "ui_sprite": "ui/icons/blank.png"},
+           "Огненный снаряд": {"class_bullet": FireBullet, "pilot": (0.5, 0.5), "sprite": "bullets/fire_blank.png",
+                               "duration": True, "radius": 10, "max_damage": 10,
+                               "ui_sprite": "ui/icons/fire_blank.png"},
+           "Огненный снаряд с таймером": {"class_bullet": TimeFireBullet, "pilot": (0.5, 0.5),
+                                          "sprite": "bullets/time_fire_blank.png",
+                                          "duration": True, "radius": 10, "max_damage": 10, "fire_count": 25,
+                                          "ui_sprite": "ui/icons/time_fire_blank.png"}
 
            }
