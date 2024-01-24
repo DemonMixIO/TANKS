@@ -1,0 +1,20 @@
+{
+  "maps": [
+    {
+      "name": "Кубики",
+      "dir": "maps/lego.png"
+    },
+    {
+      "name": "Штаты",
+      "dir": "maps/usa.png"
+    },
+    {
+      "name": "День Рождения",
+      "dir": "maps/happy-birthday.png"
+    },
+    {
+      "name": "Польз. image",
+      "dir": "maps/1706131095image.png"
+    }
+  ]
+}

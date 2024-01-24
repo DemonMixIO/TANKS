@@ -27,6 +27,10 @@ def full_damage(epicenter: pygame.Vector2, point: pygame.Vector2, radius: int, m
 
 
 class Bullet(GravityObject):
+
+    def in_bounds(self):
+        return self.rect.y < config.screen_size[0]
+
     def __init__(self, x, y, *group, sprite="bullets/blank.png", radius=25, ground_contact=True, duration=True,
                  max_damage=35, **kwargs):
         super().__init__(x, y, *group, sprite=sprite, **kwargs)
@@ -45,6 +49,13 @@ class Bullet(GravityObject):
         self.max_damage = max_damage
         self.wind = 0
 
+    def falling(self):
+        if self.rect.top < 0:
+            self.falling_speed -= config.gravity / config.fps
+            self.simple_move(0, self.falling_speed)
+        else:
+            super().falling()
+
     def update(self):
         if self.is_visible:
             self.horizontal_speed += self.wind / config.fps
@@ -58,7 +69,7 @@ class Bullet(GravityObject):
                         self.explosion()
                         tank_contact = True
                         break
-            if not tank_contact and self.ground_contact and self.check_ground_contact():
+            if self.rect.top >= 0 and not tank_contact and self.ground_contact and self.check_ground_contact():
                 self.explosion()
             self.angle_bullet()
             super().update()

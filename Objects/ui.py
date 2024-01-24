@@ -5,12 +5,27 @@ import pygame.draw
 
 from Objects.base import Object
 from Objects.weapon import weapons
+from resources import load_image
 
 
 class Icon(Object):
     def __init__(self, x, y, *group, sprite="default.png", name="", **kwargs):
         super().__init__(x, y, *group, sprite=sprite, **kwargs)
         self.name = name
+
+
+class Marker(Object):
+    def __init__(self, x, y, *group, sprite="default.png", **kwargs):
+        super().__init__(x, y, *group, sprite=sprite, **kwargs)
+        self.up = False
+        self.start_vec = pygame.Vector2(x, y)
+        self.end_vec = self.start_vec + pygame.Vector2(0, -20)
+        self.timer = time.time()
+
+    def set_pos(self, x, y):
+        self.up = False
+        self.start_vec = pygame.Vector2(x, y)
+        self.moveto(self.start_vec.x, self.start_vec.y)
 
 
 class UI:
@@ -45,6 +60,7 @@ class Panel(UI):
     def update(self):
         pass
 
+# class Button:
 
 class WeaponPanel(Panel):
     def __init__(self, x, y, width, height, color, x_open, y_open, ui_pool):

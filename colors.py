@@ -14,3 +14,5 @@ tank_orange_color = pygame.Color("#df7126")
 tank_yellow_color = pygame.Color("#cfc71e")
 tank_purple_color = pygame.Color("#8a49a3")
 tank_red_color = pygame.Color("#ac3232")
+
+menu_background = pygame.Color("#222034")

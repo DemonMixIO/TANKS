@@ -4,15 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a828685-2cbb-44f5-a273-61428ca9248f" name="Changes" comment="Add 3 kind Weapon">
-      <change afterPath="$PROJECT_DIR$/Objects/ui.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/colors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/font/rus.ttf" afterDir="false" />
+    <list default="true" id="6a828685-2cbb-44f5-a273-61428ca9248f" name="Changes" comment="Weapon UI and weapon select">
+      <change afterPath="$PROJECT_DIR$/data/maps/lego.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/maps/maps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/maps/usa.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/tank.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/tank.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/ui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Objects/weapon.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/weapon.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/bullets/blank.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/bullets/blank.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tanks/perple.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/tanks/purple.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/colors.py" beforeDir="false" afterPath="$PROJECT_DIR$/colors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/maps/lego/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/maps/lego/mask.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map.py" beforeDir="false" afterPath="$PROJECT_DIR$/map.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,30 +47,57 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/max/PycharmProjects/sandTanks/data/font&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.debug.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/max/PycharmProjects/sandTanks/data/maps",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/maps" />
       <recent name="$PROJECT_DIR$/data/font" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/maps" />
       <recent name="$PROJECT_DIR$/Objects" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="debug" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sandTanks" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/debug.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="sandTanks" />
       <option name="ENV_FILES" value="" />
@@ -88,6 +121,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.debug" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -105,7 +143,9 @@
       <option name="presentableId" value="Default" />
       <updated>1705845434847</updated>
       <workItem from="1705845436639" duration="21948000" />
-      <workItem from="1706015967501" duration="24618000" />
+      <workItem from="1706015967501" duration="30701000" />
+      <workItem from="1706096539126" duration="12967000" />
+      <workItem from="1706124250092" duration="6868000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -131,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706037506237</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Weapon UI and weapon select">
+      <option name="closed" value="true" />
+      <created>1706090250757</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706090250757</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,9 +189,11 @@
     <MESSAGE value="init" />
     <MESSAGE value="Damage and simple death" />
     <MESSAGE value="Add 3 kind Weapon" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add 3 kind Weapon" />
+    <MESSAGE value="Weapon UI and weapon select" />
+    <option name="LAST_COMMIT_MESSAGE" value="Weapon UI and weapon select" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/sandTanks$main.coverage" NAME="main Coverage Results" MODIFIED="1706089975793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sandTanks$main.coverage" NAME="main Coverage Results" MODIFIED="1706131088029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sandTanks$debug.coverage" NAME="debug Coverage Results" MODIFIED="1706125961900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

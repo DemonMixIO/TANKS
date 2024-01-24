@@ -12,9 +12,13 @@ class Object(pygame.sprite.Sprite):
     def in_bounds(self):
         return screen_bound.contains(self.rect)
 
-    def __init__(self, x, y, *group, sprite="default.png", pilot=(0, 0), pilot_pixel=False, **kwargs):
+    def __init__(self, x, y, *group, sprite="default.png", pilot=(0, 0), pilot_pixel=False, scale=(-1, -1), **kwargs):
         super().__init__(*group)
-        self.source_image = load_image(sprite)
+        self.scale = scale
+        if self.scale != (-1, -1):
+            self.source_image = pygame.transform.scale(load_image(sprite), scale)
+        else:
+            self.source_image = load_image(sprite)
         self.image = self.source_image
         self.pilot_pixel = pilot_pixel
         self.pilot = pilot
@@ -23,6 +27,14 @@ class Object(pygame.sprite.Sprite):
         self.moveto(x, y)
         self.is_visible = True
         self.update_rect()
+
+    def set_image(self, sprite="default.png", scale=(-1, -1)):
+        self.scale = scale
+        if self.scale != (-1, -1):
+            self.source_image = pygame.transform.scale(load_image(sprite), scale)
+        else:
+            self.source_image = load_image(sprite)
+        self.image = self.source_image
 
     def moveto(self, x, y):
         if not self.pilot_pixel:

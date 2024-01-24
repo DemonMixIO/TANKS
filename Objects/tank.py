@@ -1,5 +1,6 @@
 import pygame
 
+import config
 from Objects.base import GravityObject
 from resources import load_image
 
@@ -21,6 +22,14 @@ class Tank(GravityObject):
             self.health = 0
             self.can_control = False
 
+    def check_death(self):
+        return self.health <= 0
+
+    def update(self):
+        if not self.in_bounds():
+            self.health = 0
+        super().update()
+
     def player_move(self, dx, dy):
         if self.can_control:
             self.physics_move(dx, dy)
@@ -32,4 +41,4 @@ class Tank(GravityObject):
     def shoot(self, speed, bullet_pool, tanks, wind, fire_pool, timer, class_bullet, **data):
         rot = pygame.Vector2(8, 0).rotate(-self.angle)
         bul = class_bullet(self.rect.centerx + rot.x, self.rect.centery + rot.y, bullet_pool, **data)
-        bul.shoot(speed, self.angle, tanks, wind,  owner=self, fire_pool=fire_pool, timer=timer)
+        bul.shoot(speed, self.angle, tanks, wind, owner=self, fire_pool=fire_pool, timer=timer)

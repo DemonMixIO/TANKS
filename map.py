@@ -1,9 +1,10 @@
-import PIL
+import os
+
 import numpy as np
 import pygame
 from PIL import Image, ImageDraw
 from PIL.Image import Transpose
-import matplotlib.pyplot as plt
+
 import config
 
 
@@ -12,10 +13,14 @@ class Map:
     mask: Image
     mask_arr: np.array
 
-    def set_image(self, image_path: str, mask_path: str):
+    def set_image(self, image_path: str):
+        image_path = os.path.join("data", image_path)
         self.image = Image.open(image_path).transpose(Transpose.TRANSPOSE)
-        self.mask = Image.open(mask_path).convert("L").transpose(Transpose.TRANSPOSE)
-        self.mask_arr = np.array(self.mask)
+        self.mask = self.image.copy().convert("L")
+        for i in range(self.mask.width):
+            for j in range(self.mask.height):
+                if self.mask.getpixel((i, j)) != 0:
+                    self.mask.putpixel((i, j), 255)
 
     def __init__(self):
         pass
@@ -75,4 +80,3 @@ class Map:
 
 
 playmap = Map()
-playmap.set_image("data/maps/lego/image.png", "data/maps/lego/mask.png")
