@@ -2,6 +2,7 @@ import pygame
 
 red = pygame.Color("red")
 white = pygame.Color("white")
+black = pygame.Color("black")
 
 wind_color = pygame.Color("#639bff")
 info_color = red

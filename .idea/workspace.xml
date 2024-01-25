@@ -4,21 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a828685-2cbb-44f5-a273-61428ca9248f" name="Changes" comment="Weapon UI and weapon select">
-      <change afterPath="$PROJECT_DIR$/data/maps/lego.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/maps/maps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/maps/usa.png" afterDir="false" />
+    <list default="true" id="6a828685-2cbb-44f5-a273-61428ca9248f" name="Changes" comment="Add menu:&#10;minimap, load user maps, restart game">
+      <change afterPath="$PROJECT_DIR$/data/music/battle.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/music/bg.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/music/menu.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sounds/click.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sounds/cow_moo.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sounds/engine1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sounds/engine2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sounds/engine3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sounds/explosion.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sounds/fire_bullet_air.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sounds/flame_loop.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sounds/flame_user_attack.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sounds/throwpowerup.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sounds/throwreliase.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sounds.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Objects/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/particles.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/particles.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Objects/tank.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/tank.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Objects/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/ui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Objects/weapon.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/weapon.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/colors.py" beforeDir="false" afterPath="$PROJECT_DIR$/colors.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/lego/image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/lego/mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/maps/maps.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/maps/maps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.py" beforeDir="false" afterPath="$PROJECT_DIR$/map.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +65,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/max/PycharmProjects/sandTanks/data/maps",
+    "last_opened_file_path": "/home/max/PycharmProjects/sandTanks/data/sounds",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,10 +77,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/sounds" />
+      <recent name="$PROJECT_DIR$/data/music" />
       <recent name="$PROJECT_DIR$/data/maps" />
       <recent name="$PROJECT_DIR$/data/font" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/decor" />
       <recent name="$PROJECT_DIR$/data/maps" />
       <recent name="$PROJECT_DIR$/Objects" />
     </key>
@@ -145,7 +159,7 @@
       <workItem from="1705845436639" duration="21948000" />
       <workItem from="1706015967501" duration="30701000" />
       <workItem from="1706096539126" duration="12967000" />
-      <workItem from="1706124250092" duration="6868000" />
+      <workItem from="1706124250092" duration="32892000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -179,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706090250757</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add menu:&#10;minimap, load user maps, restart game">
+      <option name="closed" value="true" />
+      <created>1706131165041</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706131165041</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,10 +212,11 @@
     <MESSAGE value="Damage and simple death" />
     <MESSAGE value="Add 3 kind Weapon" />
     <MESSAGE value="Weapon UI and weapon select" />
-    <option name="LAST_COMMIT_MESSAGE" value="Weapon UI and weapon select" />
+    <MESSAGE value="Add menu:&#10;minimap, load user maps, restart game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add menu:&#10;minimap, load user maps, restart game" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/sandTanks$main.coverage" NAME="main Coverage Results" MODIFIED="1706131088029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sandTanks$main.coverage" NAME="main Coverage Results" MODIFIED="1706219583776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/sandTanks$debug.coverage" NAME="debug Coverage Results" MODIFIED="1706125961900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

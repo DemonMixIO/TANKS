@@ -2,18 +2,25 @@ import pygame
 
 import config
 from Objects.base import GravityObject
+from Objects.weapon import weapons
 from resources import load_image
 
 
 class Tank(GravityObject):
     def __init__(self, x, y, *group, sprite="default.png", can_control=True, color=(255, 0, 0),
-                 death_sprite="default.png", **kwargs):
+                 death_sprite="default.png", engine_sound="data/sounds/engine1.wav", **kwargs):
         super().__init__(x, y, *group, sprite=sprite, **kwargs)
+
         self.can_control = can_control
         self.angle = 0
         self.color = color
         self.health = 100
+        self.cur_weapon = list(weapons.keys())[0]
         self.death_sprite = load_image(death_sprite)
+        self.engine_sound = engine_sound
+
+    def set_cur_weapon(self, cur_weapon_name):
+        self.cur_weapon = cur_weapon_name
 
     def damage(self, damage):
         self.health -= damage

@@ -118,3 +118,28 @@ class GravityObject(Object):
 
     def check_ground_contact(self):
         return playmap.check_in_ground_around(self.rect) or playmap.check_on_ground_around(self.rect)
+
+
+class AnimatedObject(Object):
+    def __init__(self, x, y, *group, sprite="default.png", slice_image=(1, 1), **kwargs):
+        super().__init__(x, y, *group, sprite=sprite, **kwargs)
+        self.frames = []
+        self.slice_image = slice_image
+        self.cut_sheet()
+        self.cur_frame = 0
+        self.image = self.frames[self.cur_frame]
+        self.rect = self.image.get_rect()
+        self.moveto(x, y)
+
+    def cut_sheet(self):
+        self.rect = pygame.Rect(0, 0, self.source_image.get_width() // self.slice_image[0],
+                                self.source_image.get_height() // self.slice_image[1])
+        for j in range(self.slice_image[1]):
+            for i in range(self.slice_image[0]):
+                frame_location = (self.rect.w * i, self.rect.h * j)
+                self.frames.append(self.source_image.subsurface(pygame.Rect(
+                    frame_location, self.rect.size)))
+
+    def set_frame(self, frame):
+        self.cur_frame = frame
+        self.image = self.frames[self.cur_frame]
