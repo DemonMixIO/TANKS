@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a828685-2cbb-44f5-a273-61428ca9248f" name="Changes" comment="Add sound manager&#10;add a lot of sounds&#10;fix events with loaded map">
-      <change afterPath="$PROJECT_DIR$/data/sounds/rocketpowerup.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/rocketrelease.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts.py" afterDir="false" />
+    <list default="true" id="6a828685-2cbb-44f5-a273-61428ca9248f" name="Changes" comment="Full work MVP">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Objects/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/tank.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/tank.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Objects/weapon.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/weapon.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sounds.py" beforeDir="false" afterPath="$PROJECT_DIR$/sounds.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +138,7 @@
       <workItem from="1705845436639" duration="21948000" />
       <workItem from="1706015967501" duration="30701000" />
       <workItem from="1706096539126" duration="12967000" />
-      <workItem from="1706124250092" duration="42958000" />
+      <workItem from="1706124250092" duration="47306000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -192,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706219772722</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Full work MVP">
+      <option name="closed" value="true" />
+      <created>1706268453553</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706268453553</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,10 +220,11 @@
     <MESSAGE value="Weapon UI and weapon select" />
     <MESSAGE value="Add menu:&#10;minimap, load user maps, restart game" />
     <MESSAGE value="Add sound manager&#10;add a lot of sounds&#10;fix events with loaded map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sound manager&#10;add a lot of sounds&#10;fix events with loaded map" />
+    <MESSAGE value="Full work MVP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Full work MVP" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/sandTanks$main.coverage" NAME="main Coverage Results" MODIFIED="1706268298256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sandTanks$main.coverage" NAME="main Coverage Results" MODIFIED="1706285053104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/sandTanks$debug.coverage" NAME="debug Coverage Results" MODIFIED="1706125961900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

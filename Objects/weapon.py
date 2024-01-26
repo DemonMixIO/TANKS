@@ -29,11 +29,12 @@ def full_damage(epicenter: pygame.Vector2, point: pygame.Vector2, radius: int, m
 
 class Bullet(GravityObject):
 
-    def __init__(self, x, y, *group, sprite="bullets/blank.png", radius=25, ground_contact=True, duration=True,
+    def __init__(self, x, y, *group, sprite="bullets/blank.png", radius=25, ground_contact=True, push_force=2, duration=True,
                  max_damage=35, sound="data/sounds/explosion.wav", player_dmg_sound="data/sounds/explosion.wav",
                  **kwargs):
         super().__init__(x, y, *group, sprite=sprite, **kwargs)
         self.sound = sound
+        self.push_force = push_force
         self.player_dmg_sound = player_dmg_sound
         self.radius = radius
         self.owner = None
@@ -104,8 +105,12 @@ class Bullet(GravityObject):
     def damaging(self):
         playmap.remove_circle(*self.rect.center, self.radius)
         for tank in self.tanks:
-            tank.damage(count_damage(pygame.Vector2(self.rect.center), pygame.Vector2(tank.rect.center), self.radius,
-                                     self.max_damage))
+            cnt_dmg = count_damage(pygame.Vector2(self.rect.center), pygame.Vector2(tank.rect.center), self.radius,
+                                   self.max_damage)
+            if cnt_dmg != 0:
+                tank.damage(cnt_dmg,
+                            ((tank.float_position - self.float_position).normalize()[0] * self.push_force,
+                             cnt_dmg / 10))
 
     def explosion(self):
         explosion_sound(self.sound)
@@ -131,7 +136,8 @@ class FireBullet(Bullet):
         self.damaging()
         explosion_sound(self.sound)
         for i in range(self.fire_count):
-            fire = Fire(self.rect.center[0] + random.randrange(-4, 4), self.rect.center[1] + random.randrange(-4, 4),
+            fire = Fire(self.rect.center[0] + random.randrange(-4, 4),
+                        self.rect.center[1] + random.randrange(-4, 4),
                         self.fire_pool, sound=self.flame_sound, player_dmg_sound=self.player_flame_sound)
             fire.shoot(speed=random.random(), angle=random.randrange(0, 180), tanks=self.tanks, wind=self.wind,
                        owner=self.owner)
@@ -188,18 +194,19 @@ class TimeFireBullet(FireBullet):
             self.explosion()
 
 
-weapons = {"Разрывной": {"class_bullet": Bullet, "pilot": (0.5, 0.5), "sprite": "bullets/blank.png", "duration": True,
-                         "ui_sprite": "ui/icons/blank.png"},
-           "Огненный снаряд": {"class_bullet": FireBullet, "pilot": (0.5, 0.5), "sprite": "bullets/fire_blank.png",
-                               "duration": True, "radius": 10, "max_damage": 10,
-                               "ui_sprite": "ui/icons/fire_blank.png", "powerup_sound": "data/sounds/rocketpowerup.wav",
-                               "release_sound": "data/sounds/rocketrelease.wav"},
-           "Огненный снаряд с таймером": {"class_bullet": TimeFireBullet, "pilot": (0.5, 0.5),
-                                          "sprite": "bullets/time_fire_blank.png",
-                                          "duration": True, "radius": 10, "max_damage": 10, "fire_count": 25,
-                                          "ui_sprite": "ui/icons/time_fire_blank.png",
-                                          "sound": "data/sounds/fire_bullet_air.wav",
-                                          "powerup_sound": "data/sounds/rocketpowerup.wav",
-                                          "release_sound": "data/sounds/rocketrelease.wav"}
+weapons = {
+    "Разрывной": {"class_bullet": Bullet, "pilot": (0.5, 0.5), "sprite": "bullets/blank.png", "duration": True,
+                  "ui_sprite": "ui/icons/blank.png"},
+    "Огненный снаряд": {"class_bullet": FireBullet, "pilot": (0.5, 0.5), "sprite": "bullets/fire_blank.png",
+                        "duration": True, "radius": 10, "max_damage": 10,
+                        "ui_sprite": "ui/icons/fire_blank.png", "powerup_sound": "data/sounds/rocketpowerup.wav",
+                        "release_sound": "data/sounds/rocketrelease.wav"},
+    "Огненный снаряд с таймером": {"class_bullet": TimeFireBullet, "pilot": (0.5, 0.5),
+                                   "sprite": "bullets/time_fire_blank.png",
+                                   "duration": True, "radius": 10, "max_damage": 10, "fire_count": 25,
+                                   "ui_sprite": "ui/icons/time_fire_blank.png",
+                                   "sound": "data/sounds/fire_bullet_air.wav",
+                                   "powerup_sound": "data/sounds/rocketpowerup.wav",
+                                   "release_sound": "data/sounds/rocketrelease.wav"}
 
-           }
+}

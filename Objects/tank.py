@@ -1,3 +1,6 @@
+import math
+
+import numpy as np
 import pygame
 
 import config
@@ -18,12 +21,15 @@ class Tank(GravityObject):
         self.cur_weapon = list(weapons.keys())[0]
         self.death_sprite = load_image(death_sprite)
         self.engine_sound = engine_sound
+        self.horizontal_speed = 0
 
     def set_cur_weapon(self, cur_weapon_name):
         self.cur_weapon = cur_weapon_name
 
-    def damage(self, damage):
+    def damage(self, damage, vect=(0, 0)):
         self.health -= damage
+        self.horizontal_speed = vect[0]
+        self.falling_speed = -vect[1]
         if self.health <= 0:
             self.image = self.death_sprite
             self.health = 0
@@ -33,6 +39,15 @@ class Tank(GravityObject):
         return self.health <= 0
 
     def update(self):
+        if self.horizontal_speed != 0:
+            print(self.horizontal_speed)
+        if self.on_ground():
+            self.horizontal_speed += -np.sign(self.horizontal_speed) * 5 / config.fps
+        else:
+            self.horizontal_speed += -np.sign(self.horizontal_speed) * 1 / config.fps
+        if abs(self.horizontal_speed) < 0.1:
+            self.horizontal_speed = 0
+        self.physics_move(self.horizontal_speed, 0)
         if not self.in_bounds():
             self.health = 0
         super().update()

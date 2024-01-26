@@ -44,6 +44,7 @@ next_tank_event = pygame.event.Event(NEXT_TANK)
 in_start_logo = True
 in_menu = True
 press_start_text_show = False
+win = False
 
 start_game = False
 opening_file = False
@@ -185,6 +186,9 @@ tanks_icons = [Object(-40, -40, player_count_pool, sprite="ui/player_count.png",
 pygame.time.set_timer(LOGO1, 2300, 1)
 
 
+# WIN
+
+
 def show_count_player():
     player_count_pool.empty()
     tanks_icons.clear()
@@ -260,7 +264,7 @@ def next_tank():
 
 
 def shooting(force):
-    global cur_tank, wind, is_shoot, move_timer, shoot
+    global cur_tank, wind, is_shoot, move_timer, shoot, release_shoot
     shoot = True
     cur_tank.shoot(force, bullets_pool, tanks, wind, fire_pool=fire_pool, timer=shoot_timer, **cur_bullet)
     is_shoot = True
@@ -314,6 +318,7 @@ while is_running:
                 hide_marker()
             if event.type == END:
                 in_menu = True
+                win = False
                 play_menu_music()
             if cnt_lives != 1:
                 if event.type == pygame.KEYDOWN:
@@ -523,6 +528,7 @@ while is_running:
                 if not tank.check_death():
                     cnt_lives += 1
             if cnt_lives <= 1:
+                win = True
                 pygame.time.set_timer(END, 5000, 1)
 
         # UI
