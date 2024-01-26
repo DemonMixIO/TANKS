@@ -8,7 +8,25 @@ fire_damage_sound = pygame.mixer.Sound('data/sounds/flame_loop.wav')
 start_game_sound = pygame.mixer.Sound('data/sounds/cow_moo.wav')
 
 engine_sounds = ['data/sounds/engine1.wav', 'data/sounds/engine2.wav', 'data/sounds/engine3.wav']
+default_powerup_sound = 'data/sounds/throwpowerup.wav'
+default_release_sound = 'data/sounds/throwreliase.wav'
 engine_sound = pygame.mixer.Sound('data/sounds/engine1.wav')
+
+
+def powerup_sound(path):
+    global throwpowerup_sound
+    throwpowerup_sound = pygame.mixer.Sound(path)
+    throwpowerup_sound.play()
+
+
+def powerup_sound_stop():
+    throwpowerup_sound.stop()
+
+
+def release_sound(path):
+    global throwreliase_sound
+    throwreliase_sound = pygame.mixer.Sound(path)
+    throwreliase_sound.play()
 
 
 def play_menu_music():

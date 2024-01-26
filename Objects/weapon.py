@@ -192,11 +192,14 @@ weapons = {"Разрывной": {"class_bullet": Bullet, "pilot": (0.5, 0.5), "
                          "ui_sprite": "ui/icons/blank.png"},
            "Огненный снаряд": {"class_bullet": FireBullet, "pilot": (0.5, 0.5), "sprite": "bullets/fire_blank.png",
                                "duration": True, "radius": 10, "max_damage": 10,
-                               "ui_sprite": "ui/icons/fire_blank.png"},
+                               "ui_sprite": "ui/icons/fire_blank.png", "powerup_sound": "data/sounds/rocketpowerup.wav",
+                               "release_sound": "data/sounds/rocketrelease.wav"},
            "Огненный снаряд с таймером": {"class_bullet": TimeFireBullet, "pilot": (0.5, 0.5),
                                           "sprite": "bullets/time_fire_blank.png",
                                           "duration": True, "radius": 10, "max_damage": 10, "fire_count": 25,
                                           "ui_sprite": "ui/icons/time_fire_blank.png",
-                                          "sound": "data/sounds/fire_bullet_air.wav"}
+                                          "sound": "data/sounds/fire_bullet_air.wav",
+                                          "powerup_sound": "data/sounds/rocketpowerup.wav",
+                                          "release_sound": "data/sounds/rocketrelease.wav"}
 
            }

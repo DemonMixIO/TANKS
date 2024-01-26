@@ -17,11 +17,14 @@ import config
 from Objects.base import GravityObject, Object
 from Objects.particles import Leaf, Fountain
 from Objects.tank import Tank
-from Objects.ui import WeaponPanel, Marker, Panel, BulletMarker, SinObject
+from Objects.ui import WeaponPanel, Marker, Panel, BulletMarker, SinObject, TimerPanel
 from Objects.weapon import Bullet, weapons, TimeFireBullet
 from colors import *
 from map import playmap
 from sounds import *
+from fonts import *
+
+pygame.init()
 
 SHOWMARKER = pygame.USEREVENT + 1021
 END = pygame.USEREVENT + 1023
@@ -30,6 +33,13 @@ LOGO1 = pygame.USEREVENT + 1025
 LOGO2 = pygame.USEREVENT + 1026
 LOGO3 = pygame.USEREVENT + 1027
 TAP_FOR_START = pygame.USEREVENT + 1028
+PREMOVE = pygame.USEREVENT + 1029
+MOVE = pygame.USEREVENT + 1030
+NEXT_TANK = pygame.USEREVENT + 1031
+
+premove_event = pygame.event.Event(PREMOVE)
+move_event = pygame.event.Event(MOVE)
+next_tank_event = pygame.event.Event(NEXT_TANK)
 
 in_start_logo = True
 in_menu = True
@@ -38,23 +48,24 @@ press_start_text_show = False
 start_game = False
 opening_file = False
 
+premove = True
+next_tank_flag = False
 clock = pygame.time.Clock()
-pygame.init()
+timerPanel = TimerPanel(20, 20, 64, 64)
+
+premove_time = 5
+move_time = 10
+
+premove_timer = 0
+move_timer = 0
 
 screen = pygame.display.set_mode(config.screen_size)
 manager = pygame_gui.UIManager(config.screen_size)
 
-health_font = pygame.font.Font('data/font/rus.ttf', 24)
-timer_font = pygame.font.Font('data/font/rus.ttf', 20)
-wind_font = pygame.font.Font('data/font/rus.ttf', 24)
-info_font = pygame.font.Font('data/font/rus.ttf', 30)
-weapon_font = pygame.font.Font('data/font/rus.ttf', 24)
-map_info_font = pygame.font.Font('data/font/rus.ttf', 24)
-logo_font = pygame.font.Font('data/font/rus.ttf', 52)
-
 shoot_press_time = 0
-shoot = False
+shoot = True
 is_shoot = False
+release_shoot = False
 
 shoot_timer = 2
 
@@ -237,28 +248,37 @@ def show_marker():
 
 
 def next_tank():
-    global cur_tank, cur_bullet
+    global cur_tank, cur_bullet, premove, release_shoot
     cur_tank = next(tanks_cycle)
     weapon_panel.set_weapon_by_name(cur_tank.cur_weapon)
     cur_bullet = weapons[cur_tank.cur_weapon]
+    show_marker()
+    premove = True
+    release_shoot = False
+    pygame.event.post(premove_event)
+    restore_move_params()
 
 
 def shooting(force):
-    global cur_tank, wind, is_shoot
+    global cur_tank, wind, is_shoot, move_timer, shoot
+    shoot = True
     cur_tank.shoot(force, bullets_pool, tanks, wind, fire_pool=fire_pool, timer=shoot_timer, **cur_bullet)
-    next_tank()
     is_shoot = True
-    throwreliase_sound.play()
+    move_timer = move_time - 2
+    release_shoot = True
+    release_sound(cur_bullet.get("release_sound", default_release_sound))
+
+
+def restore_move_params():
+    global is_pressed
+    is_pressed = [False, False, False, False, False]  # left, right, up, down, space
 
 
 def restore_params():
     global info_text, show_info_text, is_pressed
     info_text = ""
     show_info_text = False
-    is_pressed = [False, False, False, False, False]  # left, right, up, down, space
-
-
-# sounds
+    restore_move_params()
 
 
 play_loading_music()
@@ -267,6 +287,10 @@ is_running = True
 file_selection = None
 while is_running:
     time_delta = clock.tick(config.fps) / 1000
+    if shoot:
+        move_timer += time_delta
+    premove_timer += time_delta
+
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             is_running = False
@@ -274,6 +298,16 @@ while is_running:
             sys.exit()
 
         if not in_menu:
+            if event.type == NEXT_TANK:
+                next_tank()
+                next_tank_flag = False
+            if event.type == PREMOVE:
+                premove = True
+                premove_timer = 0
+                pygame.time.set_timer(MOVE, premove_time * 1000, 1)
+            if premove and event.type == MOVE:
+                premove = False
+                move_timer = 0
             if event.type == SHOWMARKER:
                 show_marker()
             if event.type == pygame.KEYDOWN:
@@ -282,7 +316,8 @@ while is_running:
                 in_menu = True
                 play_menu_music()
             if cnt_lives != 1:
-                if not is_shoot and event.type == pygame.KEYDOWN:
+                if event.type == pygame.KEYDOWN:
+                    pygame.event.post(move_event)
                     if event.key == pygame.K_LEFT:
                         is_pressed[0] = True
                     if event.key == pygame.K_RIGHT:
@@ -291,24 +326,22 @@ while is_running:
                         is_pressed[2] = True
                     if event.key == pygame.K_DOWN:
                         is_pressed[3] = True
-                    if event.key == pygame.K_SPACE:
+                    if not release_shoot and not is_shoot and event.key == pygame.K_SPACE:
+
                         if cur_bullet["duration"]:
-                            throwpowerup_sound.play()
+                            powerup_sound(cur_bullet.get("powerup_sound", default_powerup_sound))
                             is_pressed[4] = True
                             shoot = False
                             shoot_press_time = time.time()
                         else:
                             shooting(10)
-                    if event.key == pygame.K_TAB:
-                        next_tank()
-                        show_marker()
                     if event.unicode.isdigit() and 1 <= int(event.unicode) <= 3:
                         start_info_timer = time.time()
                         shoot_timer = int(event.unicode)
                         info_text = f"Задержка для снаряда установлена: {shoot_timer} сек"
                         show_info_text = True
 
-                if not is_shoot and event.type == pygame.KEYUP:
+                if event.type == pygame.KEYUP:
 
                     if event.key == pygame.K_LEFT:
                         is_pressed[0] = False
@@ -319,13 +352,13 @@ while is_running:
                         is_pressed[2] = False
                     if event.key == pygame.K_DOWN:
                         is_pressed[3] = False
-                    if event.key == pygame.K_SPACE:
+                    if not release_shoot and not is_shoot and event.key == pygame.K_SPACE:
                         is_pressed[4] = False
                         if not shoot and cur_tank.can_control:
-                            throwpowerup_sound.stop()
+                            powerup_sound_stop()
                             shooting(10 * (time.time() - shoot_press_time))
 
-                if event.type == pygame.MOUSEBUTTONDOWN:
+                if not is_shoot and event.type == pygame.MOUSEBUTTONDOWN:
                     if event.button == 1:
                         if weapon_panel.end:
                             weapon_panel.select_weapon(pygame.mouse.get_pos())
@@ -399,32 +432,31 @@ while is_running:
                 if event.type == START:
                     in_menu = False
                     start_game = False
+                    pygame.event.post(premove_event)
                     restore_params()
                     spawn_tanks()
         manager.process_events(event)
     if not in_menu:
         if cnt_lives != 1:
 
-            if not is_shoot:
-                if is_pressed[4] and cur_bullet["duration"]:
-                    if time.time() - shoot_press_time >= 1.1:
-                        if not shoot and cur_tank.can_control:
-                            is_pressed[4] = False
-                            shoot = True
-                            shooting(10)
-                else:
-                    if not is_pressed[0] and not is_pressed[1]:
-                        stop_engine_sound()
-                    if is_pressed[0]:
-                        play_engine_sounds(cur_tank.engine_sound)
-                        cur_tank.player_move(-0.7, 0)
-                    if is_pressed[1]:
-                        play_engine_sounds(cur_tank.engine_sound)
-                        cur_tank.player_move(+0.7, 0)
-                    if is_pressed[2]:
-                        cur_tank.turn(1)
-                    if is_pressed[3]:
-                        cur_tank.turn(-1)
+            if not is_shoot and is_pressed[4] and cur_bullet["duration"]:
+                if time.time() - shoot_press_time >= 1.1:
+                    if not shoot and cur_tank.can_control:
+                        is_pressed[4] = False
+                        shooting(10)
+            else:
+                if not is_pressed[0] and not is_pressed[1]:
+                    stop_engine_sound()
+                if is_pressed[0]:
+                    play_engine_sounds(cur_tank.engine_sound)
+                    cur_tank.player_move(-0.7, 0)
+                if is_pressed[1]:
+                    play_engine_sounds(cur_tank.engine_sound)
+                    cur_tank.player_move(+0.7, 0)
+                if is_pressed[2]:
+                    cur_tank.turn(1)
+                if is_pressed[3]:
+                    cur_tank.turn(-1)
 
         playmap.draw_map(screen)
         if len(leaf_pool.sprites()) < 20:
@@ -478,7 +510,6 @@ while is_running:
             if is_shoot and len(bullets_pool.sprites()) == 0:
                 is_shoot = False
                 wind = random.randrange(-5, 5)
-                show_marker()
             if show_info_text:
                 if time.time() - start_info_timer < info_timer:
                     info = info_font.render(info_text, False, info_color)
@@ -520,6 +551,15 @@ while is_running:
 
         if cur_tank.check_death():
             next_tank()
+
+        if premove:
+            timerPanel.draw(screen, timer=round(premove_time - premove_timer))
+        else:
+            timerPanel.draw(screen, timer=round(move_time - move_timer))
+            if not next_tank_flag and move_time - move_timer < 0:
+                next_tank_flag = True
+                pygame.event.post(next_tank_event)
+
     else:
         if in_start_logo:
             pygame.draw.rect(screen, black, (0, 0, screen.get_width(), screen.get_width()))

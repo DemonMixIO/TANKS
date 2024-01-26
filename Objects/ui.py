@@ -7,6 +7,8 @@ import pygame.draw
 import config
 from Objects.base import Object, AnimatedObject
 from Objects.weapon import weapons
+from colors import red, menu_background, white
+from fonts import game_timer_font
 from resources import load_image
 
 
@@ -43,7 +45,7 @@ class SinObject(Object):
 
 
 class UI:
-    def __init__(self, x, y):
+    def __init__(self, x, y, **kwargs):
         self.pos = pygame.Vector2(x, y)
 
     def draw(self, screen):
@@ -60,16 +62,34 @@ class UI:
 
 
 class Panel(UI):
-    def __init__(self, x, y, width, height, color, border_radius=4):
-        super().__init__(x, y)
+    def __init__(self, x, y, width, height, color, border_radius=4, **kwargs):
+        super().__init__(x, y, **kwargs)
         self.width = width
         self.height = height
         self.color = color
         self.border_radius = border_radius
+        self.rect = pygame.Rect(x, y, self.width, self.height)
 
     def draw(self, screen):
         pygame.draw.rect(screen, self.color, (self.pos.x, self.pos.y, self.width, self.height),
                          border_radius=self.border_radius)
+
+    def update(self):
+        pass
+
+
+class TimerPanel(Panel):
+    def __init__(self, x, y, width, height, color=white, border_radius=4, **kwargs):
+        super().__init__(x, y, width, height, color, 4, **kwargs)
+
+    def draw(self, screen, timer=0):
+        pygame.draw.rect(screen, red, (self.pos.x, self.pos.y, self.width, self.height),
+                         border_radius=self.border_radius)
+        pygame.draw.rect(screen, menu_background, (self.pos.x + 5, self.pos.y + 5, self.width - 10, self.height - 10),
+                         border_radius=self.border_radius)
+        game_timer = game_timer_font.render(str(timer), False, (255, 255, 255) if timer > 3 else (255, 0, 0))
+        screen.blit(game_timer,
+                    (self.rect.centerx - game_timer.get_width() // 2, self.rect.centery - game_timer.get_height() // 2))
 
     def update(self):
         pass
