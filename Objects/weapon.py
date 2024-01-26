@@ -7,9 +7,10 @@ import pygame
 
 import config
 from Objects.base import GravityObject
+from events import damage_event, selfdamage_event
 from map import playmap
 from resources import load_image
-from sounds import explosion_sound, play_fire_sounds
+from sounds import explosion_sound
 
 
 def count_damage(epicenter: pygame.Vector2, point: pygame.Vector2, radius: int, max_damage: int):
@@ -29,11 +30,13 @@ def full_damage(epicenter: pygame.Vector2, point: pygame.Vector2, radius: int, m
 
 class Bullet(GravityObject):
 
-    def __init__(self, x, y, *group, sprite="bullets/blank.png", radius=25, ground_contact=True, push_force=2, duration=True,
+    def __init__(self, x, y, *group, sprite="bullets/blank.png", radius=25, ground_contact=True, push_force=2,
+                 duration=True, owner_bullet=True,
                  max_damage=35, sound="data/sounds/explosion.wav", player_dmg_sound="data/sounds/explosion.wav",
                  **kwargs):
         super().__init__(x, y, *group, sprite=sprite, **kwargs)
         self.sound = sound
+        self.owner_bullet = owner_bullet
         self.push_force = push_force
         self.player_dmg_sound = player_dmg_sound
         self.radius = radius
@@ -98,7 +101,6 @@ class Bullet(GravityObject):
                 self.rotation = -np.sign(self.falling_speed) * math.degrees(math.acos(
                     (vect.x ** 2) / (math.sqrt(vect.x ** 2 + vect.y ** 2) * vect.x)))
             except ZeroDivisionError:
-                print(vect.x, math.sqrt(vect.x ** 2 + vect.y ** 2))
                 self.rotation = 0
         self.image = pygame.transform.rotate(self.source_image, self.rotation)
 
@@ -111,6 +113,10 @@ class Bullet(GravityObject):
                 tank.damage(cnt_dmg,
                             ((tank.float_position - self.float_position).normalize()[0] * self.push_force,
                              cnt_dmg / 10))
+                # pygame.event.post(damage_event)
+        if count_damage(pygame.Vector2(self.rect.center), pygame.Vector2(self.owner.rect.center), self.radius,
+                        self.max_damage) != 0:
+            pygame.event.post(selfdamage_event)
 
     def explosion(self):
         explosion_sound(self.sound)
@@ -130,7 +136,6 @@ class FireBullet(Bullet):
     def shoot(self, speed, angle, tanks, wind, owner=None, fire_pool=None, **kwargs):
         super().shoot(speed, angle, tanks, wind, owner)
         self.fire_pool = fire_pool
-        print(self.fire_pool)
 
     def explosion(self):
         self.damaging()
@@ -150,23 +155,30 @@ class Fire(Bullet):
         self.count_explosion = 5
 
     def update(self):
-        self.image = pygame.transform.rotate(self.source_image, random.randrange(0, 4) * 90)
-        if self.on_ground():
-            self.falling_speed = -1
-            self.horizontal_speed *= 0.2
-            self.count_explosion -= 1
-            self.explosion()
+        if self.in_bounds():
+            self.image = pygame.transform.rotate(self.source_image, random.randrange(0, 4) * 90)
+            if self.on_ground():
+                self.falling_speed = -1
+                self.horizontal_speed *= 0.2
+                self.count_explosion -= 1
+                self.explosion()
         super().update()
 
     def damaging(self):
         playmap.remove_circle(*self.rect.center, self.radius)
         for tank in self.tanks:
             dmg = full_damage(pygame.Vector2(self.rect.center), pygame.Vector2(tank.rect.center), self.radius + 5,
-                              self.max_damage)
-            tank.damage(dmg)
+                              self.max_damage, )
+
             if dmg != 0:
                 self.count_explosion = 0
+                tank.damage(dmg, ((tank.float_position - self.float_position).normalize()[0] * self.push_force,
+                                  dmg / 10))
+                pygame.event.post(damage_event)
                 explosion_sound(self.player_dmg_sound)
+            if count_damage(pygame.Vector2(self.rect.center), pygame.Vector2(self.owner.rect.center), self.radius,
+                            self.max_damage) != 0:
+                pygame.event.post(selfdamage_event)
 
     def explosion(self):
         self.damaging()

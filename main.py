@@ -23,38 +23,26 @@ from colors import *
 from map import playmap
 from sounds import *
 from fonts import *
+from events import *
 
 pygame.init()
-
-SHOWMARKER = pygame.USEREVENT + 1021
-END = pygame.USEREVENT + 1023
-START = pygame.USEREVENT + 1024
-LOGO1 = pygame.USEREVENT + 1025
-LOGO2 = pygame.USEREVENT + 1026
-LOGO3 = pygame.USEREVENT + 1027
-TAP_FOR_START = pygame.USEREVENT + 1028
-PREMOVE = pygame.USEREVENT + 1029
-MOVE = pygame.USEREVENT + 1030
-NEXT_TANK = pygame.USEREVENT + 1031
-
-premove_event = pygame.event.Event(PREMOVE)
-move_event = pygame.event.Event(MOVE)
-next_tank_event = pygame.event.Event(NEXT_TANK)
 
 in_start_logo = True
 in_menu = True
 press_start_text_show = False
 win = False
+win_tank = None
 
 start_game = False
 opening_file = False
 
 premove = True
 next_tank_flag = False
+
 clock = pygame.time.Clock()
 timerPanel = TimerPanel(20, 20, 64, 64)
 
-premove_time = 5
+premove_time = 3
 move_time = 10
 
 premove_timer = 0
@@ -68,8 +56,12 @@ shoot = True
 is_shoot = False
 release_shoot = False
 
+damaged = False
+self_damage = False
+
 shoot_timer = 2
 
+saw_harry = False
 tanks_pool = pygame.sprite.Group()
 bullets_pool = pygame.sprite.Group()
 leaf_pool = pygame.sprite.Group()
@@ -91,6 +83,7 @@ visible_marker = False
 marker = Marker(0, 0, marker_pool, sprite="ui/marker.png", pilot=(0.5, 0.5))
 bullet_marker = BulletMarker(-10, -10, bullets_mark_pool, sprite="ui/bullet_pos.png", pilot=(0.5, 0.5),
                              slice_image=(3, 3))
+
 # PHYSICS
 wind = random.randrange(-5, 5)
 
@@ -140,13 +133,15 @@ def spawn_tanks():
     tanks.clear()
     global cnt_lives, tanks_cycle, cur_tank
     tanks_shuffle = copy.deepcopy(tanks_colors)
+    speech_shuffle = copy.deepcopy(speeches)
     random.shuffle(tanks_colors)
+    random.shuffle(speech_shuffle)
     step = (screen.get_width() - 200) // cnt_spawn
     cnt_lives = cnt_spawn
     for idx in range(cnt_spawn):
         tanks.append(
             Tank(100 + step * idx, random.randrange(100, 300), tanks_pool, sprite=tanks_shuffle[idx][0],
-                 engine_sound=random.choice(engine_sounds), color=tanks_shuffle[idx][1]))
+                 engine_sound=random.choice(engine_sounds), color=tanks_shuffle[idx][1], speech=speech_shuffle[idx]))
     tanks_cycle = itertools.cycle(tanks)
     next_tank()
 
@@ -252,15 +247,25 @@ def show_marker():
 
 
 def next_tank():
-    global cur_tank, cur_bullet, premove, release_shoot
-    cur_tank = next(tanks_cycle)
-    weapon_panel.set_weapon_by_name(cur_tank.cur_weapon)
-    cur_bullet = weapons[cur_tank.cur_weapon]
-    show_marker()
-    premove = True
-    release_shoot = False
-    pygame.event.post(premove_event)
-    restore_move_params()
+    if not win:
+        global cur_tank, cur_bullet, premove, release_shoot
+        cur_tank = next(tanks_cycle)
+        if cur_tank.check_death():
+            for i in range(len(tanks)):
+                cur_tank = next(tanks_cycle)
+                if cur_tank.check_death():
+                    continue
+                else:
+                    break
+        weapon_panel.set_weapon_by_name(cur_tank.cur_weapon)
+        cur_bullet = weapons[cur_tank.cur_weapon]
+        show_marker()
+        premove = True
+        release_shoot = False
+        pygame.event.post(premove_event)
+        restore_move_params()
+        cur_tank.play_speech("yessir")
+        map(lambda x: x.undamaged(), tanks)
 
 
 def shooting(force):
@@ -274,13 +279,25 @@ def shooting(force):
 
 
 def restore_move_params():
+    global damaged, saw_harry, self_damage
+    damaged = False
+    saw_harry = False
+    self_damage = False
+    for t in tanks:
+        t.undamaged()
+    restore_input_params()
+
+
+def restore_input_params():
     global is_pressed
     is_pressed = [False, False, False, False, False]  # left, right, up, down, space
 
 
 def restore_params():
-    global info_text, show_info_text, is_pressed
+    global info_text, show_info_text, is_pressed, win_tank, win
     info_text = ""
+    win_tank = None
+    win = False
     show_info_text = False
     restore_move_params()
 
@@ -302,6 +319,24 @@ while is_running:
             sys.exit()
 
         if not in_menu:
+            if event.type == WIN:
+                play_victory_music()
+                if win_tank:
+                    win_tank.victory_sound()
+            if event.type == SELFDAMAGE:
+                self_damage = True
+                pygame.event.post(pre_next_tank_event)
+                cur_tank.selfdamage_sound()
+            if event.type == DAMAGE:
+                damaged = True
+            if event.type == PRE_NEXT_TANK:
+                next_tank_flag = True
+                print(list(filter(lambda x: x.is_move, tanks)))
+                if len(list(filter(lambda x: x.is_move, tanks))) == 0:
+                    restore_input_params()
+                    pygame.time.set_timer(NEXT_TANK, 1500, 1)
+                else:
+                    pygame.event.post(pre_next_tank_event)
             if event.type == NEXT_TANK:
                 next_tank()
                 next_tank_flag = False
@@ -321,7 +356,7 @@ while is_running:
                 win = False
                 play_menu_music()
             if cnt_lives != 1:
-                if event.type == pygame.KEYDOWN:
+                if not next_tank_flag and event.type == pygame.KEYDOWN:
                     pygame.event.post(move_event)
                     if event.key == pygame.K_LEFT:
                         is_pressed[0] = True
@@ -332,7 +367,7 @@ while is_running:
                     if event.key == pygame.K_DOWN:
                         is_pressed[3] = True
                     if not release_shoot and not is_shoot and event.key == pygame.K_SPACE:
-
+                        cur_tank.play_speech("fire")
                         if cur_bullet["duration"]:
                             powerup_sound(cur_bullet.get("powerup_sound", default_powerup_sound))
                             is_pressed[4] = True
@@ -524,11 +559,18 @@ while is_running:
                     show_info_text = False
 
             cnt_lives = 0
+            lives_tanks = []
             for tank in tanks:
                 if not tank.check_death():
                     cnt_lives += 1
+                    lives_tanks.append(tank)
             if cnt_lives <= 1:
                 win = True
+                try:
+                    win_tank = lives_tanks[0]
+                except IndexError:
+                    win_tank = None
+                pygame.event.post(win_event)
                 pygame.time.set_timer(END, 5000, 1)
 
         # UI
@@ -555,16 +597,38 @@ while is_running:
             marker_pool.update()
             marker_pool.draw(screen)
 
-        if cur_tank.check_death():
-            next_tank()
-
-        if premove:
-            timerPanel.draw(screen, timer=round(premove_time - premove_timer))
+        if win:
+            if win_tank:
+                win_text = win_font.render(f"{win_tank.speech['name']} - победители", False, win_tank.color,
+                                           bgcolor=black)
+                screen.blit(win_text, (screen.get_width() // 2 - win_text.get_width() // 2, screen.get_height() // 3))
+            else:
+                win_text = win_font.render(f"Ничья", False, white, bgcolor=black)
+                screen.blit(win_text, (screen.get_width() // 2 - win_text.get_width() // 2, screen.get_height() // 3))
         else:
-            timerPanel.draw(screen, timer=round(move_time - move_timer))
-            if not next_tank_flag and move_time - move_timer < 0:
-                next_tank_flag = True
-                pygame.event.post(next_tank_event)
+            if premove:
+                premove_render = premove_font.render(f"Ходят {cur_tank.speech['name']}", False, cur_tank.color)
+                screen.blit(premove_render,
+                            (screen.get_width() // 2 - premove_render.get_width() // 2, screen.get_height() // 6))
+                timerPanel.draw(screen, timer=round(premove_time - premove_timer))
+            else:
+                timerPanel.draw(screen, timer=round(move_time - move_timer) if not next_tank_flag else 0,
+                                pick=not release_shoot and not next_tank_flag)
+                if not self_damage:
+                    if not saw_harry and move_time - move_timer < move_time / 2:
+                        cur_tank.hurry_sound()
+                        saw_harry = True
+                        saw_harry = True
+                    if not next_tank_flag and move_time - move_timer < 0:
+                        pygame.event.post(pre_next_tank_event)
+                        if not release_shoot:
+                            cur_tank.play_speech("boring")
+                        elif not damaged:
+                            cur_tank.missing_sound()
+                        elif damaged:
+                            random.choice(
+                                list(filter(lambda x: x.was_damaged and not x.check_death(), tanks))).damaged_sound()
+
 
     else:
         if in_start_logo:

@@ -5,6 +5,7 @@ from typing import Union, Tuple
 import pygame.draw
 
 import config
+import sounds
 from Objects.base import Object, AnimatedObject
 from Objects.weapon import weapons
 from colors import red, menu_background, white
@@ -81,8 +82,9 @@ class Panel(UI):
 class TimerPanel(Panel):
     def __init__(self, x, y, width, height, color=white, border_radius=4, **kwargs):
         super().__init__(x, y, width, height, color, 4, **kwargs)
+        self.last_number = 5
 
-    def draw(self, screen, timer=0):
+    def draw(self, screen, timer=0, pick=True):
         pygame.draw.rect(screen, red, (self.pos.x, self.pos.y, self.width, self.height),
                          border_radius=self.border_radius)
         pygame.draw.rect(screen, menu_background, (self.pos.x + 5, self.pos.y + 5, self.width - 10, self.height - 10),
@@ -90,6 +92,12 @@ class TimerPanel(Panel):
         game_timer = game_timer_font.render(str(timer), False, (255, 255, 255) if timer > 3 else (255, 0, 0))
         screen.blit(game_timer,
                     (self.rect.centerx - game_timer.get_width() // 2, self.rect.centery - game_timer.get_height() // 2))
+        if self.last_number != timer:
+            last_nul = self.last_number == 0
+            self.last_number = timer
+            if not last_nul and timer <= 2:
+                if pick:
+                    sounds.timer_tick.play()
 
     def update(self):
         pass
