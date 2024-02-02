@@ -1,12 +1,8 @@
-import asyncio
 import copy
 import itertools
 import json
-import os
-import random
 import sys
 import time
-import shutil
 
 import pygame.sprite
 import pygame_gui
@@ -14,11 +10,11 @@ from PIL import Image
 from pygame_gui.windows import UIFileDialog
 
 import config
-from Objects.base import GravityObject, Object
+from Objects.base import Object
 from Objects.particles import Leaf, Fountain
 from Objects.tank import Tank
 from Objects.ui import WeaponPanel, Marker, Panel, BulletMarker, SinObject, TimerPanel
-from Objects.weapon import Bullet, weapons, TimeFireBullet
+from Objects.weapon import weapons, TimeFireBullet
 from colors import *
 from map import playmap
 from sounds import *

@@ -11,6 +11,14 @@
     {
       "name": "День Рождения",
       "dir": "maps/happy-birthday.png"
+    },
+    {
+      "name": "�����. Herobrine",
+      "dir": "maps/1706721019Herobrine.png"
+    },
+    {
+      "name": "�����. 3",
+      "dir": "maps/17067983633.png"
     }
   ]
 }

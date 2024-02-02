@@ -5,304 +5,586 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a828685-2cbb-44f5-a273-61428ca9248f" name="Changes" comment="Dmg pushing add">
-      <change afterPath="$PROJECT_DIR$/data/music/victory/russia.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/american/walk-compress.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/american/walk-expand.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/amazing.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/boring.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/brilliant.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/bummer.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/bungee.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/byebye.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/collect.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/comeonthen.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/coward.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/dragonpunch.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/drop.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/excellent.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/fatality.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/fire.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/fireball.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/firstblood.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/flawless.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/goaway.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/grenade.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/hello.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/hurry.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/illgetyou.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/incoming.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/jump1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/jump2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/justyouwait.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/kamikaze.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/laugh.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/leavemealone.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/missed.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/nooo.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/ohdear.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/oinutter.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/oof1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/oof2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/oof3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/oops.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/orders.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/ouch.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/ow1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/ow2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/ow3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/perfect.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/revenge.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/runaway.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/stupid.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/takecover.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/traitor.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/uhoh.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/victory.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/watchthis.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/whatthe.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/yessir.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/youllregretthat.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/english/walk-compress.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/english/walk-expand.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/amazing.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/boring.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/brilliant.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/bummer.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/bungee.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/byebye.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/collect.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/comeonthen.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/coward.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/dragonpunch.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/drop.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/excellent.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/fatality.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/fire.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/fireball.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/firstblood.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/flawless.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/goaway.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/grenade.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/hello.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/hurry.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/illgetyou.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/incoming.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/jump1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/jump2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/justyouwait.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/kamikaze.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/laugh.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/leavemealone.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/missed.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/nooo.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/ohdear.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/oinutter.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/ooff1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/ooff2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/ooff3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/oops.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/orders.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/ouch.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/ow1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/ow2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/ow3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/perfect.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/revenge.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/runaway.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/stupid.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/takecover.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/traitor.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/uh-oh.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/victory.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/watchthis.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/whatthe.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/yessir.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/fins/youllregretthat.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/amazing.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/boring.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/brilliant.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/bummer.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/bungee.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/byebye.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/collect.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/comeonthen.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/coward.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/dragonpunch.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/drop.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/excellent.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/fatality.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/fire.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/fireball.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/firstblood.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/flawless.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/goaway.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/grenade.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/hello.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/hurry.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/illgetyou.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/incoming.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/jump1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/jump2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/justyouwait.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/kamikaze.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/laugh.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/leavemealone.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/missed.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/nooo.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/ohdear.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/oinutter.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/ooff1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/ooff2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/ooff3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/oops.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/orders.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/ouch.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/ow1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/ow2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/ow3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/perfect.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/revenge.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/runaway.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/stupid.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/takecover.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/traitor.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/uh-oh.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/victory.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/watchthis.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/whatthe.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/yessir.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/irish/youllregretthat.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/amazing.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/boring.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/brilliant.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/bummer.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/bungee.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/byebye.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/collect.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/comeonthen.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/coward.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/dragonpunch.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/drop.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/excellent.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/fatality.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/fire.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/fireball.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/firstblood.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/flawless.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/goaway.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/grenade.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/hello.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/hurry.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/illgetyou.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/incoming.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/jump1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/jump2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/justyouwait.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/kamikaze.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/laugh.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/leavemealone.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/missed.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/nooo.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/ohdear.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/oinutter.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/oof1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/oof2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/oof3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/oops.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/orders.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/ouch.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/ow1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/ow2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/ow3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/perfect.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/revenge.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/runaway.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/stupid.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/takecover.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/traitor.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/uhoh.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/victory.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/watchthis.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/whatthe.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/yessir.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/youllregretthat.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/amazing.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/boring.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/brilliant.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/bummer.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/bungee.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/byebye.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/collect.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/comeonthen.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/coward.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/dragonpunch.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/drop.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/excellent.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/fatality.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/fire.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/fireball.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/firstblood.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/flawless.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/goaway.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/grenade.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/hello.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/hurry.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/illgetyou.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/incoming.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/jump1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/jump2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/justyouwait.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/kamikaze.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/laugh.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/leavemealone.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/missed.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/nooo.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/oinutter.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/oops.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/orders.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/ouch.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/ow1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/ow2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/ow3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/perfect.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/revenge.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/runaway.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/stupid.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/traitor.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/victory.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/watchthis.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/whatthe.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/yessir.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/speech/russian/youllregretthat.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sounds/timertick.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/events.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sandTanks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sandTanks.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Objects/tank.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/tank.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Objects/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/ui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Objects/weapon.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/weapon.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/1706131095image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/1706163260pngwing.com(3).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/1706163420pngwing.com(4).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/1706163450pngwing.com(1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/1706163533pngwing.com(2).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/1706163590pngwing.com(2).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/17061636941706163450pngwing.com(1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/1706163783lego.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/1706163883leaf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/1706163926leaf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/1706164041fire.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/1706164073default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/17061641711706131095image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/17061643681706131095image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/17061647621706163260pngwing.com(3).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/1706164849default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/1706166166default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/1706166209default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/maps/maps.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/maps/maps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.py" beforeDir="false" afterPath="$PROJECT_DIR$/debug.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sounds.py" beforeDir="false" afterPath="$PROJECT_DIR$/sounds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/music/victory/disco king.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/music/victory/disco king.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/music/victory/egypt.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/music/victory/egypt.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/music/victory/fast-snore.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/music/victory/fast-snore.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/music/victory/fatsynth.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/music/victory/fatsynth.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/music/victory/finland.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/music/victory/finland.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/music/victory/flush.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/music/victory/flush.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/music/victory/france.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/music/victory/france.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/music/victory/funny-fall.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/music/victory/funny-fall.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/music/victory/funny-machine.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/music/victory/funny-machine.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/music/victory/funskool.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/music/victory/funskool.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/music/victory/georgia.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/music/victory/georgia.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/music/victory/germany.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/music/victory/germany.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/music/victory/gong.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/music/victory/gong.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/music/victory/russia.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/music/victory/russia.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/cow_moo.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/cow_moo.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/explosion.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/explosion.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/fire_bullet_air.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/fire_bullet_air.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/flame_loop.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/flame_loop.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/flame_user_attack.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/flame_user_attack.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/rocketpowerup.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/rocketpowerup.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/rocketrelease.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/rocketrelease.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/amazing.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/amazing.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/boring.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/boring.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/brilliant.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/brilliant.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/bummer.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/bummer.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/bungee.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/bungee.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/byebye.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/byebye.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/collect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/collect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/comeonthen.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/comeonthen.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/coward.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/coward.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/dragonpunch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/dragonpunch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/drop.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/drop.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/excellent.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/excellent.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/fatality.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/fatality.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/fire.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/fire.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/fireball.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/fireball.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/firstblood.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/firstblood.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/flawless.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/flawless.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/goaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/goaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/grenade.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/grenade.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/hello.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/hello.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/hmm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/hmm.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/hurry.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/hurry.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/illgetyou.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/illgetyou.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/incoming.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/incoming.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/jump1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/jump1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/jump2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/jump2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/justyouwait.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/justyouwait.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/kamikaze.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/kamikaze.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/laugh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/laugh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/leavemealone.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/leavemealone.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/missed.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/missed.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/nooo.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/nooo.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/ohdear.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/ohdear.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/oinutter.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/oinutter.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/ooff1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/ooff1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/ooff2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/ooff2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/ooff3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/ooff3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/oops.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/oops.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/orders.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/orders.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/ouch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/ouch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/ow1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/ow1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/ow2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/ow2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/ow3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/ow3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/perfect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/perfect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/revenge.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/revenge.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/runaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/runaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/stupid.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/stupid.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/surf.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/surf.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/takecover.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/takecover.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/traitor.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/traitor.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/uh-oh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/uh-oh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/victory.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/victory.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/walk-compress.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/walk-compress.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/walk-expand.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/walk-expand.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/watchthis.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/watchthis.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/whatthe.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/whatthe.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/wobble.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/wobble.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/yessir.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/yessir.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/american/youllregretthat.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/american/youllregretthat.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/amazing.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/amazing.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/boring.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/boring.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/brilliant.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/brilliant.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/bummer.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/bummer.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/bungee.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/bungee.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/byebye.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/byebye.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/collect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/collect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/comeonthen.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/comeonthen.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/coward.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/coward.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/dragonpunch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/dragonpunch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/drop.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/drop.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/excellent.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/excellent.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/fatality.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/fatality.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/fire.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/fire.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/fireball.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/fireball.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/firstblood.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/firstblood.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/flawless.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/flawless.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/goaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/goaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/grenade.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/grenade.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/hello.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/hello.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/hurry.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/hurry.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/illgetyou.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/illgetyou.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/incoming.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/incoming.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/jump1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/jump1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/jump2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/jump2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/justyouwait.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/justyouwait.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/kamikaze.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/kamikaze.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/laugh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/laugh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/leavemealone.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/leavemealone.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/missed.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/missed.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/nooo.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/nooo.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/ohdear.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/ohdear.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/oinutter.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/oinutter.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/oof1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/oof1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/oof2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/oof2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/oof3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/oof3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/oops.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/oops.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/orders.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/orders.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/ouch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/ouch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/ow1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/ow1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/ow2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/ow2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/ow3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/ow3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/perfect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/perfect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/revenge.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/revenge.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/runaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/runaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/stupid.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/stupid.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/takecover.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/takecover.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/traitor.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/traitor.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/uhoh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/uhoh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/victory.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/victory.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/watchthis.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/watchthis.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/whatthe.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/whatthe.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/yessir.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/yessir.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/drunk/youllregretthat.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/drunk/youllregretthat.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/amazing.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/amazing.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/boring.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/boring.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/brilliant.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/brilliant.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/bummer.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/bummer.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/bungee.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/bungee.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/byebye.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/byebye.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/collect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/collect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/comeonthen.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/comeonthen.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/coward.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/coward.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/dragonpunch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/dragonpunch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/drop.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/drop.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/excellent.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/excellent.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/fatality.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/fatality.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/fire.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/fire.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/fireball.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/fireball.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/firstblood.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/firstblood.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/flawless.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/flawless.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/goaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/goaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/grenade.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/grenade.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/hello.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/hello.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/hmm.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/hmm.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/hurry.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/hurry.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/illgetyou.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/illgetyou.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/incoming.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/incoming.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/jump1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/jump1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/jump2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/jump2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/justyouwait.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/justyouwait.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/kamikaze.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/kamikaze.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/laugh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/laugh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/leavemealone.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/leavemealone.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/missed.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/missed.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/nooo.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/nooo.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/ohdear.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/ohdear.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/oinutter.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/oinutter.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/ooff1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/ooff1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/ooff2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/ooff2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/ooff3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/ooff3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/oops.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/oops.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/orders.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/orders.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/ouch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/ouch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/ow1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/ow1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/ow2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/ow2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/ow3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/ow3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/perfect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/perfect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/revenge.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/revenge.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/runaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/runaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/stupid.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/stupid.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/takecover.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/takecover.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/traitor.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/traitor.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/uh-oh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/uh-oh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/victory.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/victory.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/walk-compress.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/walk-compress.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/walk-expand.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/walk-expand.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/watchthis.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/watchthis.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/whatthe.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/whatthe.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/wobble.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/wobble.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/yessir.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/yessir.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/english/youllregretthat.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/english/youllregretthat.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/amazing.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/amazing.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/boring.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/boring.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/brilliant.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/brilliant.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/bummer.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/bummer.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/bungee.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/bungee.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/byebye.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/byebye.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/collect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/collect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/comeonthen.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/comeonthen.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/coward.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/coward.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/dragonpunch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/dragonpunch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/drop.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/drop.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/excellent.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/excellent.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/fatality.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/fatality.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/fire.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/fire.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/fireball.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/fireball.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/firstblood.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/firstblood.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/flawless.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/flawless.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/goaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/goaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/grenade.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/grenade.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/hello.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/hello.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/hurry.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/hurry.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/illgetyou.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/illgetyou.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/incoming.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/incoming.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/jump1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/jump1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/jump2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/jump2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/justyouwait.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/justyouwait.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/kamikaze.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/kamikaze.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/laugh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/laugh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/leavemealone.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/leavemealone.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/missed.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/missed.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/nooo.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/nooo.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/ohdear.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/ohdear.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/oinutter.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/oinutter.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/ooff1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/ooff1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/ooff2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/ooff2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/ooff3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/ooff3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/oops.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/oops.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/orders.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/orders.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/ouch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/ouch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/ow1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/ow1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/ow2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/ow2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/ow3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/ow3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/perfect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/perfect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/revenge.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/revenge.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/runaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/runaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/stupid.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/stupid.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/takecover.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/takecover.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/traitor.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/traitor.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/uh-oh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/uh-oh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/victory.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/victory.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/watchthis.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/watchthis.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/whatthe.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/whatthe.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/yessir.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/yessir.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/fins/youllregretthat.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/fins/youllregretthat.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/amazing.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/amazing.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/boring.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/boring.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/brilliant.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/brilliant.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/bummer.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/bummer.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/bungee.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/bungee.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/byebye.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/byebye.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/collect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/collect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/comeonthen.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/comeonthen.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/coward.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/coward.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/dragonpunch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/dragonpunch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/drop.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/drop.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/excellent.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/excellent.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/fatality.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/fatality.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/fire.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/fire.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/fireball.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/fireball.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/firstblood.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/firstblood.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/flawless.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/flawless.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/goaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/goaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/grenade.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/grenade.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/hello.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/hello.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/hurry.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/hurry.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/illgetyou.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/illgetyou.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/incoming.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/incoming.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/jump1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/jump1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/jump2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/jump2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/justyouwait.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/justyouwait.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/kamikaze.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/kamikaze.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/laugh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/laugh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/leavemealone.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/leavemealone.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/missed.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/missed.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/nooo.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/nooo.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/ohdear.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/ohdear.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/oinutter.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/oinutter.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/ooff1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/ooff1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/ooff2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/ooff2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/ooff3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/ooff3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/oops.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/oops.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/orders.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/orders.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/ouch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/ouch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/ow1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/ow1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/ow2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/ow2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/ow3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/ow3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/perfect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/perfect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/revenge.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/revenge.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/runaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/runaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/stupid.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/stupid.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/takecover.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/takecover.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/traitor.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/traitor.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/uh-oh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/uh-oh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/victory.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/victory.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/watchthis.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/watchthis.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/whatthe.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/whatthe.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/wobble.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/wobble.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/yessir.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/yessir.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/french/youllregretthat.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/french/youllregretthat.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/amazing.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/amazing.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/boring.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/boring.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/brilliant.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/brilliant.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/bummer.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/bummer.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/bungee.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/bungee.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/byebye.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/byebye.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/collect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/collect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/comeonthen.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/comeonthen.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/coward.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/coward.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/dragonpunch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/dragonpunch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/drop.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/drop.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/excellent.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/excellent.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/fatality.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/fatality.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/fire.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/fire.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/fireball.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/fireball.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/firstblood.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/firstblood.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/flawless.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/flawless.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/goaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/goaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/grenade.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/grenade.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/hello.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/hello.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/hurry.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/hurry.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/illgetyou.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/illgetyou.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/incoming.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/incoming.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/jump1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/jump1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/jump2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/jump2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/justyouwait.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/justyouwait.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/kamikaze.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/kamikaze.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/laugh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/laugh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/leavemealone.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/leavemealone.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/missed.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/missed.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/nooo.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/nooo.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/ohdear.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/ohdear.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/oinutter.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/oinutter.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/ooff1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/ooff1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/ooff2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/ooff2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/ooff3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/ooff3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/oops.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/oops.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/orders.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/orders.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/ouch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/ouch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/ow1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/ow1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/ow2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/ow2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/ow3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/ow3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/perfect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/perfect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/revenge.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/revenge.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/runaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/runaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/stupid.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/stupid.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/takecover.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/takecover.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/traitor.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/traitor.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/uh-oh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/uh-oh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/victory.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/victory.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/watchthis.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/watchthis.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/whatthe.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/whatthe.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/wobble.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/wobble.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/yessir.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/yessir.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/goofer/youllregretthat.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/goofer/youllregretthat.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/amazing.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/amazing.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/boring.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/boring.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/brilliant.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/brilliant.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/bummer.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/bummer.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/bungee.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/bungee.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/byebye.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/byebye.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/collect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/collect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/comeonthen.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/comeonthen.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/coward.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/coward.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/dragonpunch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/dragonpunch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/drop.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/drop.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/excellent.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/excellent.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/fatality.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/fatality.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/fire.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/fire.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/fireball.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/fireball.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/firstblood.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/firstblood.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/flawless.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/flawless.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/goaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/goaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/grenade.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/grenade.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/hello.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/hello.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/hurry.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/hurry.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/illgetyou.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/illgetyou.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/incoming.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/incoming.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/jump1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/jump1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/jump2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/jump2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/justyouwait.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/justyouwait.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/kamikaze.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/kamikaze.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/laugh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/laugh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/leavemealone.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/leavemealone.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/missed.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/missed.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/nooo.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/nooo.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/ohdear.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/ohdear.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/oinutter.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/oinutter.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/ooff1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/ooff1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/ooff2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/ooff2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/ooff3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/ooff3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/oops.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/oops.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/orders.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/orders.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/ouch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/ouch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/ow1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/ow1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/ow2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/ow2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/ow3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/ow3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/perfect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/perfect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/revenge.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/revenge.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/runaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/runaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/stupid.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/stupid.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/takecover.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/takecover.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/traitor.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/traitor.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/uh-oh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/uh-oh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/victory.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/victory.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/watchthis.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/watchthis.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/whatthe.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/whatthe.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/yessir.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/yessir.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/irish/youllregretthat.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/irish/youllregretthat.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/amazing.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/amazing.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/boring.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/boring.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/brilliant.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/brilliant.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/bummer.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/bummer.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/bungee.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/bungee.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/byebye.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/byebye.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/collect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/collect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/comeonthen.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/comeonthen.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/coward.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/coward.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/dragonpunch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/dragonpunch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/drop.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/drop.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/excellent.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/excellent.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/fatality.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/fatality.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/fire.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/fire.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/fireball.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/fireball.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/firstblood.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/firstblood.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/flawless.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/flawless.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/goaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/goaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/grenade.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/grenade.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/hello.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/hello.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/hurry.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/hurry.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/illgetyou.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/illgetyou.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/incoming.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/incoming.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/jump1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/jump1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/jump2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/jump2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/justyouwait.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/justyouwait.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/kamikaze.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/kamikaze.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/laugh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/laugh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/leavemealone.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/leavemealone.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/missed.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/missed.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/nooo.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/nooo.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/ohdear.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/ohdear.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/oinutter.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/oinutter.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/oof1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/oof1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/oof2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/oof2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/oof3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/oof3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/oops.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/oops.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/orders.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/orders.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/ouch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/ouch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/ow1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/ow1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/ow2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/ow2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/ow3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/ow3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/perfect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/perfect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/revenge.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/revenge.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/runaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/runaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/stupid.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/stupid.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/takecover.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/takecover.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/traitor.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/traitor.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/uhoh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/uhoh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/victory.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/victory.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/watchthis.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/watchthis.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/whatthe.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/whatthe.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/yessir.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/yessir.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/redneck/youllregretthat.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/redneck/youllregretthat.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/amazing.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/amazing.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/boring.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/boring.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/brilliant.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/brilliant.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/bummer.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/bummer.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/bungee.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/bungee.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/byebye.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/byebye.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/collect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/collect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/comeonthen.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/comeonthen.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/coward.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/coward.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/dragonpunch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/dragonpunch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/drop.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/drop.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/excellent.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/excellent.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/fatality.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/fatality.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/fire.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/fire.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/fireball.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/fireball.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/firstblood.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/firstblood.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/flawless.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/flawless.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/goaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/goaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/grenade.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/grenade.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/hello.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/hello.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/hurry.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/hurry.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/illgetyou.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/illgetyou.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/incoming.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/incoming.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/jump1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/jump1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/jump2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/jump2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/justyouwait.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/justyouwait.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/kamikaze.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/kamikaze.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/laugh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/laugh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/leavemealone.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/leavemealone.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/missed.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/missed.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/nooo.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/nooo.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/ohdear.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/ohdear.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/oinutter.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/oinutter.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/ooff1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/ooff1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/ooff2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/ooff2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/ooff3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/ooff3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/oops.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/oops.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/orders.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/orders.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/ouch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/ouch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/ow1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/ow1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/ow2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/ow2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/ow3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/ow3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/perfect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/perfect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/revenge.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/revenge.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/runaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/runaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/stupid.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/stupid.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/takecover.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/takecover.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/traitor.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/traitor.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/uh-oh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/uh-oh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/victory.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/victory.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/watchthis.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/watchthis.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/whatthe.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/whatthe.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/yessir.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/yessir.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/russian/youllregretthat.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/russian/youllregretthat.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/amazing.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/amazing.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/boring.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/boring.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/brilliant.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/brilliant.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/bummer.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/bummer.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/bungee.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/bungee.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/byebye.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/byebye.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/collect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/collect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/comeonthen.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/comeonthen.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/coward.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/coward.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/dragonpunch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/dragonpunch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/drop.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/drop.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/excellent.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/excellent.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/fatality.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/fatality.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/fire.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/fire.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/fireball.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/fireball.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/firstblood.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/firstblood.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/flawless.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/flawless.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/goaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/goaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/grenade.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/grenade.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/hello.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/hello.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/hurry.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/hurry.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/illgetyou.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/illgetyou.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/incoming.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/incoming.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/jump1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/jump1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/jump2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/jump2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/justyouwait.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/justyouwait.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/kamikaze.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/kamikaze.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/laugh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/laugh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/leavemealone.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/leavemealone.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/missed.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/missed.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/nooo.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/nooo.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/ohdear.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/ohdear.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/oinutter.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/oinutter.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/ooff1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/ooff1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/ooff2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/ooff2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/ooff3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/ooff3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/oops.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/oops.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/orders.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/orders.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/ouch.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/ouch.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/ow1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/ow1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/ow2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/ow2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/ow3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/ow3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/perfect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/perfect.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/revenge.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/revenge.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/runaway.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/runaway.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/stupid.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/stupid.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/takecover.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/takecover.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/traitor.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/traitor.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/uh-oh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/uh-oh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/victory.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/victory.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/watchthis.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/watchthis.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/whatthe.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/whatthe.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/wobble.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/wobble.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/yessir.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/yessir.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/speech/scots/youllregretthat.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/speech/scots/youllregretthat.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/throwpowerup.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/throwpowerup.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/throwreliase.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/throwreliase.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sounds/timertick.wav" beforeDir="false" afterPath="$PROJECT_DIR$/data/sounds/timertick.wav" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,13 +620,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/max/PycharmProjects/sandTanks/data/music/victory",
+    "last_opened_file_path": "C:/Users/Dmitriy/PycharmProjects/TANKS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -357,6 +639,7 @@
       <recent name="$PROJECT_DIR$/data/sounds/speech/fins" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dmitriy\PycharmProjects\TANKS" />
       <recent name="$PROJECT_DIR$/data/decor" />
       <recent name="$PROJECT_DIR$/data/maps" />
       <recent name="$PROJECT_DIR$/Objects" />
@@ -365,7 +648,6 @@
   <component name="RunManager" selected="Python.main">
     <configuration name="debug" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="sandTanks" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -388,7 +670,6 @@
     </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="sandTanks" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -526,9 +807,5 @@
     <MESSAGE value="Full work MVP" />
     <MESSAGE value="Dmg pushing add" />
     <option name="LAST_COMMIT_MESSAGE" value="Dmg pushing add" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/sandTanks$main.coverage" NAME="main Coverage Results" MODIFIED="1706299308388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/sandTanks$debug.coverage" NAME="debug Coverage Results" MODIFIED="1706296704386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
