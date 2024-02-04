@@ -42,6 +42,7 @@ class Tank(GravityObject):
             self.health = 0
             self.can_control = False
             self.is_move = False
+            self.is_visible = False
         self.was_damaged = True
 
     def undamaged(self):

@@ -1,8 +1,12 @@
+import asyncio
 import copy
 import itertools
 import json
+import os
+import random
 import sys
 import time
+import shutil
 
 import pygame.sprite
 import pygame_gui
@@ -10,11 +14,11 @@ from PIL import Image
 from pygame_gui.windows import UIFileDialog
 
 import config
-from Objects.base import Object
+from Objects.base import GravityObject, Object
 from Objects.particles import Leaf, Fountain
 from Objects.tank import Tank
 from Objects.ui import WeaponPanel, Marker, Panel, BulletMarker, SinObject, TimerPanel
-from Objects.weapon import weapons, TimeFireBullet
+from Objects.weapon import Bullet, weapons, TimeFireBullet
 from colors import *
 from map import playmap
 from sounds import *
@@ -37,9 +41,11 @@ next_tank_flag = False
 
 clock = pygame.time.Clock()
 timerPanel = TimerPanel(20, 20, 64, 64)
+in_game_time = 0
+cnt_move = 1
 
 premove_time = 3
-move_time = 10
+move_time = 15
 
 premove_timer = 0
 move_timer = 0
@@ -244,7 +250,7 @@ def show_marker():
 
 def next_tank():
     if not win:
-        global cur_tank, cur_bullet, premove, release_shoot
+        global cur_tank, cur_bullet, premove, release_shoot, cnt_move
         cur_tank = next(tanks_cycle)
         if cur_tank.check_death():
             for i in range(len(tanks)):
@@ -262,6 +268,7 @@ def next_tank():
         restore_move_params()
         cur_tank.play_speech("yessir")
         map(lambda x: x.undamaged(), tanks)
+        cnt_move += 1
 
 
 def shooting(force):
@@ -290,8 +297,10 @@ def restore_input_params():
 
 
 def restore_params():
-    global info_text, show_info_text, is_pressed, win_tank, win
+    global info_text, show_info_text, is_pressed, win_tank, win, in_game_time, cnt_move
     info_text = ""
+    in_game_time = 0
+    cnt_move = 1
     win_tank = None
     win = False
     show_info_text = False
@@ -306,6 +315,8 @@ while is_running:
     time_delta = clock.tick(config.fps) / 1000
     if shoot:
         move_timer += time_delta
+    if not in_menu and not win:
+        in_game_time += time_delta
     premove_timer += time_delta
 
     for event in pygame.event.get():
@@ -567,7 +578,9 @@ while is_running:
                 except IndexError:
                     win_tank = None
                 pygame.event.post(win_event)
-                pygame.time.set_timer(END, 5000, 1)
+                pygame.time.set_timer(END, 10000, 1)
+            if cur_tank.check_death() and not next_tank_flag:
+                pygame.event.post(pre_next_tank_event)
 
         # UI
         wind_text = wind_font.render(str(wind), False, wind_color)
@@ -601,6 +614,10 @@ while is_running:
             else:
                 win_text = win_font.render(f"Ничья", False, white, bgcolor=black)
                 screen.blit(win_text, (screen.get_width() // 2 - win_text.get_width() // 2, screen.get_height() // 3))
+            m, s, ms = int(in_game_time // 60), int(in_game_time % 60), int((in_game_time % 1) * 100)
+            result_text = results_font.render(f"Время раунда {m}:{s}:{ms}\nСделано шагов: {cnt_move - 1}", False, win_tank.color, bgcolor=black)
+            screen.blit(result_text, (screen.get_width() // 2 - result_text.get_width() // 2,
+                                      screen.get_height() // 3 + win_text.get_height()))
         else:
             if premove:
                 premove_render = premove_font.render(f"Ходят {cur_tank.speech['name']}", False, cur_tank.color)
